@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8" />
+    <title>External Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    {% load static %}
+    <!--srart theme style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome-all.css'  %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Responsive.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/calendar.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/carousel.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css'%}"/>
+    <link rel="stylesheet" href="{% static
+	'css/jquery-ui.css'%}"/>
+
+    <!-- favicon links -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
+
+    <style>
+        ul.date-items,
+        ol,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- jp popular Categories Wrapper Start -->
+    <div class="main_wrapper">
+        <div class="gc_main_menu_wrapper">
+
+            <div class="tagline">
+                <div class="container">
+                    <div class="pull-right hidden-xs hidden-sm">
+                        <div class="tagline_items">
+                            <ul class="socialmenu">
+                                <li class="linkin1"><a href="https://www.linkedin.com/company/globalhunt" target="_blank"> <img src="{% static 'images/linkedin_header.png' %}" title="Linkedin" alt="Linkedin"></a></li>
+                                <li class="facebk1"><a href="https://www.facebook.com/GlobalHuntIndia" target="_blank"> <img src="{% static 'images/facebook_header.png' %}" title="Facebook" alt="Facebook"></a></li>
+                                <li class="twitter1"><a href="https://twitter.com/GlobalHuntIndia" target="_blank"> <img src="{% static 'images/twitter_header.png' %}"title="Twitter" alt="Twitter"></a></li>
+                                <li class="googlep1"><a href="https://plus.google.com/u/0/+globalhunt/posts" target="_blank"> <img src="{% static 'images/google_header.png' %}" title="Google+" alt="Google+"></a></li>
+                                <li class="youtube1"><a href="https://www.youtube.com/c/SunilGoelGH" target="_blank"> <img src="{% static 'images/youtube_header.png' %}" title="Youtube" alt="Youtube"></a></li>
+                                <li>
+                                    <form class="searchbox" title="Search">
+                                        <input type="search" placeholder="Search job here..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                                        <input class="searchbox-submit">
+                                        <span class="searchbox-icon"><img src="{% static 'images/search_lence.png'%}" /></span>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left phoneMail">
+                        <div class="phone"><i class="fa fa-phone"></i> <a href="tel:+91 99584 54422">+91 99584 54422</a></div>
+                        <div class="phone"><i class="fa fa-mobile-alt"></i> <a href="tel:+91 11 4654 7700">+91 11 4654 7700</a></div>
+                        <div class="email"><i class="far fa-envelope"></i> <a href="mailto:corporate@globalhunt.in">corporate@globalhunt.in </a> </div>
+                        <form class="searchboxMob" title="Search">
+                            <input type="search" placeholder="Search job here..." name="search" class="searchboxMob-input" onkeyup="buttonUpMob();" required>
+                            <input class="searchboxMob-submit">
+                            <span class="searchboxMob-icon"><img src="{% static 'images/search_lence.png'%}" /></span>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="menuFull animated">
+                <div class="RedborderMenu">
+                    <div class="container p-t-5">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm">
+                                <div class="gc_header_wrapper">
+                                    <div class="gc_logo">
+                                        <a href="#"><img src="{% static 'images/logo.png'%}" alt="Logo" title="Globalhunt" class="img-responsive" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                <div class="header-area hidden-menu-bar stick" id="sticker">
+                                    <!-- mainmenu start -->
+                                    <div class="mainmenu">
+                                        <ul class="float_left m-b-0">
+                                            <li class="has-mega">
+                                                <a href="#">  <i class="fa fa-home"></i>&nbsp;</a>
+                                            </li>
+                                            <li class="has-mega gc_main_navigation">
+                                                <a href="#" class="gc_main_navigation">  About Us&nbsp;</a>
+                                                <!-- mega menu start -->
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Company Profile</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Our Values</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Leadership Team</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Customer Speaks</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="has-mega gc_main_navigation">
+                                                <a href="#" class="gc_main_navigation">Industry Practices &nbsp;</a>
+                                            </li>
+                                            <li class="has-mega gc_main_navigation">
+                                                <a href="#" class="gc_main_navigation">  Client Services&nbsp;</a>
+                                                <!-- mega menu start -->
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Post Your Requirements</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Board Search</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Executive Recruitment</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Recruitment Process Outsourcing</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>IT Staffing</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Outplacement</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Market Intelligence</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-mega gc_main_navigation">
+                                                <a href="#" class="gc_main_navigation">  Job Seekers&nbsp;</a>
+                                                <!-- mega menu start -->
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Post Resumes</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Current Openings</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>How To Make A Resume</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Career Articles</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Interviews Dos And Donts</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gc_main_navigation has-mega"><a href="#" class="gc_main_navigation">Recruitment Process</a></li>
+                                            <li class="has-mega gc_main_navigation">
+                                                <a href="#" class="gc_main_navigation">  Join us&nbsp;</a>
+                                                <!-- mega menu start -->
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Life @ GlobalHunt</a></li>
+                                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Blog</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="gc_main_navigation has-mega"><a href="#" class="gc_main_navigation">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- mainmenu end -->
+                                    <!-- mobile menu area start -->
+                                    <header class="mobail_menu">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 p-l-0">
+                                                    <div class="gc_logo">
+                                                        <a href="#"><img
+														src="{% static 'images/logo.png'%}" /></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 p-r-0">
+                                                    <div class="cd-dropdown-wrapper">
+                                                        <a class="house_toggle" href="#0">
+                                                            <img src="{% static 'images/list-menu.png' %}" class="house-Img" />
+                                                        </a>
+                                                        <nav class="cd-dropdown">
+                                                            <ul class="cd-dropdown-content">
+                                                                <li>
+                                                                    <a href="#">Home</a>
+                                                                </li>
+                                                                <!-- .has-children -->
+
+                                                                <li class="has-children">
+                                                                    <a href="#">About Us</a>
+
+                                                                    <ul class="cd-secondary-dropdown is-hidden">
+                                                                        <li class="go-back"><a href="#0">Menu</a></li>
+                                                                        <li>
+                                                                            <a href="#">Company Profile</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Our Values</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Leadership Team</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Customer Speaks</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Industry Practices</a>
+                                                                </li>
+                                                                <!-- .has-children -->
+                                                                <li class="has-children">
+                                                                    <a href="#">Client Services</a>
+
+                                                                    <ul class="cd-secondary-dropdown is-hidden">
+                                                                        <li class="go-back"><a href="#0">Menu</a></li>
+                                                                        <li>
+                                                                            <a href="#">Post Your Requirements</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Board Search</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Executive Recruitment</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Recruitment Process Outsourcing</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">IT Staffing</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Outplacement</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Market Intelligence</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <!-- .has-children -->
+                                                                <li class="has-children">
+                                                                    <a href="#">Job Seekers</a>
+
+                                                                    <ul class="cd-secondary-dropdown is-hidden">
+                                                                        <li class="go-back"><a href="#0">Menu</a></li>
+                                                                        <li>
+                                                                            <a href="#">Post Resumes</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Current Openings</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">How To Make A Resume</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Career Articles</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Interviews Dos And Donts</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Recruitment Process</a>
+                                                                </li>
+                                                                <!-- .has-children -->
+                                                                <li class="has-children">
+                                                                    <a href="#">Join us</a>
+
+                                                                    <ul class="cd-secondary-dropdown is-hidden">
+                                                                        <li class="go-back"><a href="#0">Menu</a></li>
+                                                                        <li>
+                                                                            <a href="#">Life @ GlobalHunt</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Blog</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Contact</a>
+                                                                </li>
+                                                                <li class="socialmenumobile">
+                                                                    <a href="https://www.linkedin.com/company/globalhunt" target="_blank"><img src="{% static 'images/linkedin_header.png'%}"title="Linkedin" alt="Linkedin"></a>
+                                                                    <a href="https://www.facebook.com/GlobalHuntIndia" target="_blank"> <img src="{% static 'images/facebook_header.png'%}"title="Facebook"alt="Facebook"></a>
+                                                                    <a href="https://twitter.com/GlobalHuntIndia" target="_blank"><img src="{% static 'images/twitter_header.png'%}"title="Twitter" alt="Twitter"></a>
+                                                                    <a href="https://plus.google.com/u/0/+globalhunt/posts" target="_blank"> <img src="{% static 'images/google_header.png'%}"title="Google+" alt="Google+"></a>
+                                                                    <a href="https://www.youtube.com/c/SunilGoelGH" target="_blank"> <img src="{% static 'images/youtube_header.png'%}"title="Youtube" alt="Youtube"></a>
+                                                                </li>
+                                                            </ul>
+
+                                                        </nav>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- .cd-dropdown-wrapper -->
+                                    </header>
+                                </div>
+                            </div>
+                            <!-- mobile menu area end -->
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="noti-menu animated">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-3 p-r-0">
+                                <a href="#">Find Jobs</a>
+                            </div>
+                            <div class="col-md-9 col-xs-9 p-l-0">
+                                <ul>
+                                    <li class="noti_Button notiBtn-drop">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <i class="far fa-comment-alt"></i><span class="noti_Button-no">3</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="noti_Button notiBtn-drop">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <i class="far fa-bell"></i><span class="noti_Button-no">2</span>
+                                            </button>
+                                            <div class="dropdown-menu notifica-drop">
+                                                <div class="ntfictn-header">
+                                                    <span class="pull-left">Notification</span>
+                                                    <span class="pull-right noti-set"><a href="#"><i class="fas fa-cog"></i></a></span>
+                                                </div>
+                                                <div class="slimScrollNoti">
+                                                    <div class="ground-single-list">
+                                                        <a href="#">
+                                                            <div class="btn-success-40 notifica-bck"></div>
+                                                        </a>
+                                                        <div class="ground-content">
+                                                            <h6><a href="#" class="notifica-first">Nivedia Joshi</a></h6>
+                                                            <small class="text-fade">Check New Admin Dashboard..</small>
+                                                            <span class="just-nw">Just Now</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ground-single-list">
+                                                        <a href="#">
+                                                            <div class="btn-success-40 notifica-bck"></div>
+                                                        </a>
+                                                        <div class="ground-content">
+                                                            <h6><a href="#" class="notifica-first">Nisha Upreti</a></h6>
+                                                            <small class="text-fade">You can Customize...</small>
+                                                            <span class="just-nw">02 Min Ago</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ground-single-list">
+                                                        <a href="#">
+                                                            <div class="btn-success-40 notifica-bck"></div>
+                                                        </a>
+                                                        <div class="ground-content">
+                                                            <h6><a href="#" class="notifica-first">Nikita Joshi</a></h6>
+                                                            <small class="text-fade">Need Responsive Business Tem...</small>
+                                                            <span class="just-nw">10 Min Ago</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ground-single-list">
+                                                        <a href="#">
+                                                            <div class="btn-success-40 notifica-bck"></div>
+                                                        </a>
+                                                        <div class="ground-content">
+                                                            <h6><a href="#" class="notifica-first">Nisha Upreti</a></h6>
+                                                            <small class="text-fade">You can Customize...</small>
+                                                            <span class="just-nw">02 Min Ago</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ground-single-list">
+                                                        <a href="#">
+                                                            <div class="btn-success-40 notifica-bck"></div>
+                                                        </a>
+                                                        <div class="ground-content">
+                                                            <h6><a href="#" class="notifica-first">Nikita Joshi</a></h6>
+                                                            <small class="text-fade">Need Responsive Business Tem...</small>
+                                                            <span class="just-nw">10 Min Ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="noti_Button notiBtn-drop">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <i class="far fa-user-circle"></i> Welcome {{username}}
+                                                <i class="ti-angle-down userToggle"></i>
+                                            </button>
+                                            <ul class="dropdown-menu userMenu">
+                                                <li><a href="#"><i class="far fa-comment-alt"></i>Notifications</a></li>
+                                                <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                                                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+                                            </ul>
+                                            <a href={{logout}}>Logout</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="mainSection">
+            <div class="container">
+                <section class="animated">
+                    <h3 class="title-h3">Let us know about yourself</h3>
+                    <div class="col-md-9 col-sm-12 p-l-0">
+                        <!-- Bootstrap Tabs -->
+                        <ul class="customNav1 nav nav-pills" id="tabs">
+                            <li class="active"><a class="per-pro" title="Personal" href="#1a" data-toggle="tab"><span>Personal</span></a></li>
+                            <li><a class="edu-det" title="Education" href="#2a" data-toggle="tab"><span>Education</span></a></li>
+                            <li><a class="emp-det" title="Experience" href="#3a" data-toggle="tab"><span>Experience</span></a></li>
+                            <li><a class="joi-ctc" title="Projects" href="#4a" data-toggle="tab"><span>Projects</span></a></li>
+                            <li><a class="ref" title="Other Details" href="#5a" data-toggle="tab"><span>Other Details</span></a></li>
+                            <li><a class="ref" title="Preview Profile" href="#6a" data-toggle="tab"><span>Preview Profile</span></a></li>
+                        </ul>
+
+                        <div class="customTab1 tab-content responsive clearfix">
+                            <div class="tab-pane active" id="1a">
+                                <h1 class="tab-title">Profile</h1>
+                                <div class="pro-frm-grey bordered-input m-b-5">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+
+                                                {% ifequal  email_flag "true" %}
+                                                <label for="fname">Email Id <span class="blue-span">(verified)</span></label>
+                                                <input class="form-control" id="fname emailfill" required type="text" placeholder="Email Id"  />
+                                                {% else %}
+                                                <label for="fname">Email Id <a class="red-span">(verify Now)</a></label>
+                                                <input class="form-control" id="fname emailfill" required type="text" placeholder="Email Id" />
+                                                {% endifequal  %}
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                {% ifequal  phone_flag "true" %}
+                                                <label for="fname">Mobile Number <span class="blue-span">(verified)</span></label>
+                                                <input class="form-control" id="fname mobilefill" required placeholder="Mobile No" type="text"   />
+                                                {% else %}
+                                                <label for="fname">Mobile Number <a class="red-span">(verify Now)</a></label>
+                                                <input class="form-control" id="fname mobilefill" required placeholder="Mobile No" type="text" />
+                                                {% endifequal  %}
+
+                                            </div>
+                                        </div>
+					<script>
+						var e=sessionStorage.getItem("em_stor");
+						var m=sessionStorage.getItem("mob_stor");
+						document.getElementById("emailfill").value=e;
+						document.getElementById("mobilefill").value=m;
+					</script>
+                                        <div class="col-sm-12 text-center m-t-5">
+                                            <p class="uploading-res">By uploading resume most of the details will be filled automatically</p>
+                                        </div>
+                                        <div class="col-sm-12 text-center m-t-5">
+                                            <div class="file-upload">
+                                                <div class="file-select">
+
+                                                    <div class="file-select-name" id="noFile">No file chosen...</div>
+                                                    <input type="file" name="chooseFile" id="chooseFile">
+                                                    <div class="file-select-button" id="fileName"><img src="{% static 'images/upload.png'%}" /></div>
+                                                </div>
+                                            </div>
+                                            <span class="note">.doc, .docx, .pdf & less than 2mb</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="profileFrm bordered-input" name="form_data" method="POST">
+                                    {% csrf_token %}
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="fna">First Name</label>
+                                            <input class="form-control" id="fna" placeholder="First Name" name="First_name" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="lnam">Last Name</label>
+                                            <input class="form-control" id="lnam" placeholder="Last Name" name="Last_name" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group ">
+                                            <label for="headline">Headline</label><span class="note">&nbsp;&nbsp;(<span class="note">e.g. Designation, Proffession</span>)</span>
+                                            <input class="form-control" id="headline" placeholder="Headline" name="Headline" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ui-widget">
+                                            <label for="industry">Industry</label>
+                                            <input class="form-control" id="industry" placeholder="Industry Type" name="Industry" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ui-widget">
+                                            <label for="function">Functional Area</label>
+                                            <input class="form-control" id="function" placeholder="Functional Area" name="FunctionalArea"  type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group ui-widget">
+                                            <label for="Skill1">Skills</label>
+                                            <input class="form-control" id="Skill1" size="50" type="text" placeholder="Skills" name="Skills">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="summary-label">Summary <span class="note">(Your summary will describe your objective or career goals <a class="view-example">View Example</a>)</span></label>
+                                            <textarea class="form-control summary" id="summary" rows="4" placeholder="Summary" name="Summary" ></textarea>
+                                        </div>
+                                    </div>
+                                <!--/form-->
+
+                                <div>
+                                    <div id="current" class="float100" style="display: block;">
+                                        <h1 class="tab-title float100 m-b-0 permanent">Current Address</h1>
+                                        <!--form class="profileFrm bordered-input"-->
+                                            <div class="col-sm-6">
+                                                <div class="form-group ">
+                                                    <label for="zip">Zip Code</label>
+                                                    <input class="form-control" id="zip" type="text" placeholder="Zip Code" name="ZipCode" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group ">
+                                                    <label for="street">Street Address</label>
+                                                    <input class="form-control" id="street" type="text" placeholder="Street Address" name="Street_Address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 hiddnCntry" style="display: none;">
+                                                <div class="form-group ui-widget">
+                                                    <label for="street">Country</label>
+                                                    <input class="form-control" id="country1" placeholder="Country" type="text"  name="Country"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group ui-widget">
+                                                    <label for="city1">City <span class="note redIndia">(India - <a class="view-example" id="contryChnge">Change</a>)</span></label>
+                                                    <input class="form-control" id="city1" placeholder="City"  name="City" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="country">State</label>
+                                                    <select class="form-control" name="State"   id="country">
+                                                        <option>Select State</option>
+                                                        <option>Uttrakhand</option>
+                                                        <option>Uttar Pradesh</option>
+                                                        <option>Rajasthan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="checkbox checkbox-primary">
+                                                    <input checked id="checkboxPermanent" type="checkbox">
+                                                    <label for="checkboxPermanent"></label>
+                                                    <span>Is permanent address same as current address</span>
+                                                </div>
+                                            </div>
+
+                                    </div>
+
+                                    <div class="filledDetail current-address-box" style="display: none;">
+                                        <div class="col-sm-12">
+                                            <div class="filledgrey">
+                                                <div class="pull-right">
+                                                    <a href="#">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a>
+                                                </div>
+                                                <h4>Current Address</h4>
+                                                <p>H. No. 20, Gandhi Marg,</p>
+                                                <p>Sector 54</p>
+                                                <p>Noida - 201301, U.P.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="permanent" class="float100" style="display: none;">
+                                        <h1 class="tab-title m-b-0 pull-left">Permanent Address</h1>
+                                            <div class="col-sm-6">
+                                                <div class="form-group ">
+                                                    <label for="zip">Zip Code</label>
+                                                    <input class="form-control" id="zip" type="text" placeholder="Zip Code" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group ">
+                                                    <label for="street">Street Address</label>
+                                                    <input class="form-control" id="street" type="text" placeholder="Street Address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 hiddnCntry2" style="display: none;">
+                                                <div class="form-group ui-widget">
+                                                    <label for="street">Country</label>
+                                                    <input class="form-control" id="country2" placeholder="Country" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group ui-widget">
+                                                    <label for="city1">City <span class="note redIndia">(India - <a class="view-example" id="contryChnge2">Change</a>)</span></label>
+                                                    <input class="form-control" id="city1" placeholder="City" type="text" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group ">
+                                                    <label for="country">State</label>
+                                                    <select class="form-control" id="country">
+                                                        <option>Select State</option>
+                                                        <option>Uttrakhand</option>
+                                                        <option>Uttar Pradesh</option>
+                                                        <option>Rajasthan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-xs-12">
+                                                <div class="pull-right prof2Btn">
+                                                    <button class="profile-frm-cancel" id="btn-cancel-perma">Cancel</button>
+                                                    <button class="profile-frm-grey m-l-15 profView1" id="btn-save-perma">Save</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-xs-12 m-t-30">
+                                    <input type="hidden" name="form_type" value="form_data">
+                                    <span class="btn-grey-outline pull-left">Back</span>
+                                    <button class="btn-red-small pull-right continue" name="next1" onclick="" >Save & Continue</button>
+                                </div>
+                            </form>
+                            </div>
+
+                            <div class="tab-pane" id="2a">
+                                <h1 class="tab-title float100 m-b-0">Under Graduate</h1>
+
+                                <form class="profileFrm bordered-input profEdit1">
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="fname">Degree</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Degree</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="lname">Degree Type</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Degree Type</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group ">
+                                            <label for="headline">Specialization</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Specialization</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group ">
+                                            <label class="summary-label">University </label>
+                                            <select class="form-control" id="country">
+                                                <option>Select University</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">Time Period </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt" type="text" placeholder="from">
+                                            </div>
+                                            <div id="two"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">&nbsp;</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt1" type="text" placeholder="to">
+                                            </div>
+                                            <div id="two1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="pull-right prof2Btn">
+                                            <button class="profile-frm-cancel ">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15  profSave1">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="filledDetail m-b-20 profView1" style="display:none;">
+                                    <div class="col-sm-12">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10" id="">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">Bachelors of computer science</p>
+                                            <p>bachelor's degree</p>
+                                            <p>Computer Science</p>
+                                            <p>Uttrakhand Technical University</p>
+                                            <p><span class="p-r-5">12-3-2010</span> to <span class="p-l-5">12-3-2012</span></p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="col-sm-12 col-xs-12 m-b-5 addM addpostGbtnDiv">
+                                    <a href="#" class="m-b-10 blue-span pull-left" id="addpostGbtn">Add Post Graduation</a>
+                                </div>
+                                <!--post graduation edit section start-->
+                                <h1 class="tab-title float100 m-b-0 postGhead" style="display:none;">Post Graduate</h1>
+                                <form class="profileFrm bordered-input" id="postGSec" style="display:none;">
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="fname">Degree</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Degree</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="lname">Degree Type</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Degree Type</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group ">
+                                            <label for="headline">Specialization</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Specialization</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group ">
+                                            <label class="summary-label">University </label>
+                                            <select class="form-control" id="country">
+                                                <option>Select University</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">Time Period </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt2" type="text" placeholder="from">
+                                            </div>
+                                            <div id="two2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">&nbsp;</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt3" type="text" placeholder="to">
+                                            </div>
+                                            <div id="two3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="pull-right postG2btn">
+                                            <button class="profile-frm-cancel" id="canpostGbtn">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15  profSave2">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--post graduation edit section end-->
+                                <!--post graduation view section start-->
+                                <form class="filledDetail m-b-20" style="display:none;">
+                                    <div class="col-sm-12">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10" id="">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">Master's of computer science</p>
+                                            <p>Master's degree</p>
+                                            <p>Computer Science</p>
+                                            <p>Uttrakhand Technical University</p>
+                                            <p><span class="p-r-5">12-3-2012</span> to <span class="p-l-5">12-3-2015</span></p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--post graduation view section end-->
+                                <h1 class="tab-title float100 m-b-0">Class XII</h1>
+
+                                <form class="profileFrm bordered-input">
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="fname">School Name</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select School Name</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="lname">Specification</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Specification</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ui-widget">
+                                            <label for="city2">City</label>
+                                            <input class="form-control" id="city2" placeholder="City" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">Board Name</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Board Name</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">Time Period </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt4" type="text" placeholder="from">
+                                            </div>
+                                            <div id="two4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">&nbsp;</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt5" type="text" placeholder="to">
+                                            </div>
+                                            <div id="two5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12" style="display:none;">
+                                        <div class="pull-right">
+                                            <button class="profile-frm-cancel ">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15  profView1">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="filledDetail m-b-20" style="display:none;">
+                                    <div class="col-sm-12">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">dayanand anglo vedic public school</p>
+                                            <p>Science</p>
+                                            <p>Delhi</p>
+                                            <p>CBSC</p>
+                                            <p><span class="p-r-5">12-3-2009</span> to <span class="p-l-5">12-3-2010</span></p>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="col-sm-12 col-xs-12 m-b-5 addM addclassXbtnDiv">
+                                    <a href="#" class="m-b-10 blue-span pull-left" id="addclassXbtn">Add Class X</a>
+                                </div>
+                                <!--class X edit section start-->
+                                <h1 class="tab-title float100 m-b-0 classXhead" style="display:none;">Class X</h1>
+                                <form class="profileFrm bordered-input" id="classXSec" style="display:none;">
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="fname">School Name</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select School Name</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label for="lname">Specification</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Specification</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ui-widget">
+                                            <label for="city2">City</label>
+                                            <input class="form-control" id="city2" placeholder="City" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">Board Name</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Board Name</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">Time Period </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt6" type="text" placeholder="from">
+                                            </div>
+                                            <div id="two6"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <div class="form-group ">
+                                            <label class="summary-label">&nbsp;</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt7" type="text" placeholder="to">
+                                            </div>
+                                            <div id="two7"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="pull-right">
+                                            <button class="profile-frm-cancel" id="canclassXbtn">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--class X edit section end-->
+                                <!--class X view section start-->
+                                <form class="filledDetail m-b-20" style="display:none;">
+                                    <div class="col-sm-12">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">dayanand anglo vedic public school</p>
+                                            <p>Science</p>
+                                            <p>Delhi</p>
+                                            <p>CBSC</p>
+                                            <p><span class="p-r-5">12-3-2008</span> to <span class="p-l-5">12-3-2009</span></p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--class X view section end-->
+
+                                <h1 class="tab-title float100 m-b-0">Certificates</h1>
+                                <form class="filledDetail m-b-20" id="certiView" style="display:none;">
+                                    <div class="col-sm-12">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">Best Designer</p>
+                                            <p><span class="p-r-5">12-3-2009</span> to <span class="p-l-5">12-3-2010</span></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="profileFrm bordered-input">
+                                    <div class="col-sm-12">
+                                        <div class="form-group ">
+                                            <label for="title">Title</label>
+                                            <input class="form-control" id="title" type="text" placeholder="Title" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-6 col-xs-6">
+                                                <div class="form-group ">
+                                                    <label class="summary-label">Time Period </label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                        <input class="form-control" id="dt8" type="text" placeholder="from">
+                                                    </div>
+                                                    <div id="two8"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6">
+                                                <div class="form-group ">
+                                                    <label class="summary-label">&nbsp;</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                        <input class="form-control" id="dt9" type="text" placeholder="to">
+                                                    </div>
+                                                    <div id="two9"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 m-b-10 col-xs-12">
+                                            <div class="col-sm-6">
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="checkbox-signup" type="checkbox">
+                                                    <label for="checkbox-signup"> This certificate does not Expire </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group ">
+                                            <label for="desc">Description</label>
+                                            <textarea class="form-control summary" id="summary" rows="4" placeholder="Summary"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12" style="display:none;">
+                                        <div class="pull-right prof2Btn">
+                                            <button class="profile-frm-cancel ">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15  profView1">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="col-sm-12 col-xs-12 m-b-5 addM">
+                                    <a href="#" class="m-b-10 blue-span pull-left" id="addmoreCerbtn">Add more Certificates</a>
+                                </div>
+
+                                <div class="col-sm-12 col-xs-12 m-t-30">
+                                    <button class="btn-back-outline  pull-left back">Back</button>
+                                    <button class="btn-red-small pull-right continue">Save & Continue</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="3a">
+                                <h1 class="tab-title float100 m-b-0">
+                                    <span class="expheadng">Experience</span>
+                                    <label class="custom-radio m-l-30" for="1">
+                                        Experience
+                                        <input type="radio" id="1" name="volunteer_as" onclick="previousSection('indivi', 'corpo')" value="individual" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="custom-radio" for="2">
+                                        Fresher
+                                        <input type="radio" id="2" name="volunteer_as" onclick="nextSection('corpo', 'indivi')" value="corporate">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </h1>
+                                <div id="indivi" class="float100" style="display: block;">
+                                    <form class="filledDetail m-b-20" id="ExpeView" style="display:none;">
+                                        <div class="col-sm-12">
+                                            <div class="filledgrey">
+                                                <div class="profileright"><a href="#" class="p-l-10">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                                <p class="first">Globalhunt India Pvt. Ltd.</p>
+                                                <p>Web Designer</p>
+                                                <p>Delhi</p>
+                                                <p><span class="p-r-5">12-3-2010</span> to <span class="p-l-5">12-3-2012</span></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form class="profileFrm bordered-input">
+                                        <div class="col-sm-12">
+                                            <div class="form-group ui-widget">
+                                                <label for="company1">Company Name </label>
+                                                <input class="form-control" id="company1" type="text" placeholder="Company Name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="lname">Designation</label>
+                                                <select class="form-control" id="country">
+                                                    <option>Select Designation</option>
+                                                    <option>Dummy 1</option>
+                                                    <option>Dummy 2</option>
+                                                    <option>Dummy 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group ui-widget">
+                                                <label for="city3">City </label>
+                                                <input class="form-control" id="city3" type="text" placeholder="City" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <div class="form-group ">
+                                                        <label class="summary-label">Time Period </label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                            <input class="form-control" id="dt10" type="text" placeholder="from">
+                                                        </div>
+                                                        <div id="two10"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6">
+                                                    <div class="form-group ">
+                                                        <label class="summary-label">&nbsp;</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                            <input class="form-control" id="dt11" type="text" placeholder="Present Date">
+                                                        </div>
+                                                        <div id="two11"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 m-b-20 col-xs-12">
+                                                <div class="col-sm-6">
+                                                    <div class="checkbox checkbox-primary">
+                                                        <input id="checkbox-signup" type="checkbox" checked>
+                                                        <label for="checkbox-signup"> I currently work here</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <div class="form-group ">
+                                                <label for="desc">Description</label>
+                                                <textarea class="form-control summary" id="summary" rows="4" placeholder="Summary"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12" style="display:none;">
+                                            <div class="pull-right prof2Btn">
+                                                <button class="profile-frm-cancel">Cancel</button>
+                                                <button class="profile-frm-grey m-l-15">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="col-sm-12 col-xs-12 m-b-5 addM">
+                                        <a href="#" class="m-b-10 blue-span pull-left" id="addmoreExpbtn">Add more experience</a>
+                                    </div>
+                                </div>
+                                <div id="corpo" class="float100" style="display: none;">
+                                    <form class="profileFrm bordered-input">
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="skills">Skill</label>
+                                                <input class="form-control" id="skills" type="text" placeholder="Skill" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="lname">Area of Interest</label>
+                                                <input class="form-control" id="city" type="text" placeholder="Area of Interest" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="lname">Other Interest</label>
+                                                <input class="form-control" id="city" type="text" placeholder="Area of Interest" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group ">
+                                                <label for="headline">Description<span class="note">(Role, Responsibilities, Project, Objective)</span></label>
+                                                <textarea class="form-control summary" id="summary" rows="4" placeholder="Description"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                                <h1 class="tab-title float100 m-b-0">Achivement or Awards</h1>
+                                <form class="filledDetail m-b-20" id="AchiView" style="display:none;">
+                                    <div class="col-sm-12">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">Best Designer</p>
+                                            <p><span class="p-r-5">12-3-2010</span> to <span class="p-l-5">12-3-2012</span></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="profileFrm bordered-input">
+                                    <div class="col-sm-12">
+                                        <div class="form-group ">
+                                            <label for="title">Title</label>
+                                            <input class="form-control" id="title" type="text" placeholder="Title" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-6 col-xs-6">
+                                                <div class="form-group ">
+                                                    <label class="summary-label">Time Period </label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                        <input class="form-control" id="dt12" type="text" placeholder="from">
+                                                    </div>
+                                                    <div id="two12"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6">
+                                                <div class="form-group ">
+                                                    <label class="summary-label">&nbsp;</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                        <input class="form-control" id="dt13" type="text" placeholder="to">
+                                                    </div>
+                                                    <div id="two13"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 m-b-20 col-xs-12">
+                                            <div class="col-sm-6">
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="checkbox-signup" type="checkbox" checked>
+                                                    <label for="checkbox-signup"> I currently work here</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="form-group ">
+                                            <label for="headline">Description&nbsp;&nbsp;<span class="note">(Role, Responsibilities, Project, Objective)</span></label>
+                                            <textarea class="form-control summary" id="summary" rows="4" placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12" style="display:none;">
+                                        <div class="pull-right prof2Btn">
+                                            <button class="profile-frm-cancel">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="col-sm-12 col-xs-12 m-b-5 addM">
+                                    <a href="#" class="m-b-10 blue-span pull-left" id="addmoreAchibtn">Add more Achievements</a>
+                                </div>
+                                <div class="col-sm-12 col-xs-12 m-t-30">
+                                    <button class="btn-back-outline  pull-left back">Back</button>
+                                    <button class="btn-red-small pull-right continue">Save & Continue</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="4a">
+                                <h1 class="tab-title float100 m-b-0">Projects</h1>
+                                <form class="filledDetail m-b-20" id="ProjView" style="display:none;">
+                                    <div class="col-sm-12 col-xs-12 m-b-5 addM">
+                                        <div class="filledgrey">
+                                            <div class="profileright"><a href="#" class="p-l-10">Edit</a><span class="p-l-10 p-r-10">|</span><a href="#">Cancel</a></div>
+                                            <p class="first">Globalhunt Foundation</p>
+                                            <p>Web Designer</p>
+                                            <p><span class="p-r-5">12-3-2010</span> to <span class="p-l-5">12-3-2012</span></p>
+                                            <p>https://www.globalhuntfoundation.org</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="profileFrm bordered-input">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="fname">Title</label>
+                                            <input class="form-control" id="title" type="text" placeholder="Title" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group ui-widget">
+                                            <label for="role1">Role</label>
+                                            <input class="form-control" id="role1" type="text" placeholder="Role" size="50" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-6 col-xs-6">
+                                                <div class="form-group">
+                                                    <label class="summary-label">Time Period </label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                        <input class="form-control" id="dt14" type="text" placeholder="from">
+                                                    </div>
+                                                    <div id="two14"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6">
+                                                <div class="form-group">
+                                                    <label class="summary-label">&nbsp;</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                        <input class="form-control" id="dt15" type="text" placeholder="to">
+                                                    </div>
+                                                    <div id="two15"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="lname">URL</label>
+                                            <input class="form-control" id="title" type="text" placeholder="URL" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="headline">Description&nbsp;&nbsp;<span class="note">(Role, Responsibilities, Project, Objective)</span></label>
+                                            <textarea class="form-control summary" id="summary" rows="4" placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-xs-12" style="display:none;">
+                                        <div class="pull-right float100 prof2Btn">
+                                            <button class="profile-frm-cancel">Cancel</button>
+                                            <button class="profile-frm-grey m-l-15">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="col-sm-12">
+                                    <a href="#" class="m-b-10 blue-span pull-left" id="addmoreProjbtn">Add more Projects</a>
+                                </div>
+                                <div class="col-sm-12 col-xs-12 m-t-30">
+                                    <button class="btn-back-outline  pull-left back">Back</button>
+                                    <button class="btn-red-small pull-right continue">Save & Continue</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="5a">
+                                <h1 class="tab-title float100 m-b-0">Job Preference</h1>
+                                <form class="profileFrm bordered-input">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="fname">Prefered Location</label>
+                                            <input class="form-control" id="title" type="text" placeholder="Title" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lname">Job Type</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Job Type</option>
+                                                <option>Permanent</option>
+                                                <option>Temporary</option>
+                                                <option>Work from Home</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="headline">Employment Type</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Employment Type</option>
+                                                <option>Full Time</option>
+                                                <option>Part Time</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="summary-label">Expected Salary</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Expected Salary</option>
+                                                <option>Dummy 1</option>
+                                                <option>Dummy 2</option>
+                                                <option>Dummy 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <h1 class="tab-title float100 m-b-0">Affirmative Action</h1>
+
+                                <form class="profileFrm bordered-input">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="dob">Date of Birth</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                <input class="form-control" id="dt16" type="text" placeholder="Date of Birth">
+                                            </div>
+                                            <div id="two16"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group float100">
+                                            <label for="gender">Gender</label>
+                                            <div class="gender float100">
+                                                <div class="p-l-0 p-r-10 col-xs-4"><button class="profile-frm-lightblue" id="btn-male" type="button">Male</button></div>
+                                                <div class="p-l-10 p-r-10 col-xs-4"><button class="profile-lightblue-Outline" id="btn-female" type="button">Female</button></div>
+                                                <div class="p-l-10 p-r-0 col-xs-4"><button class="profile-lightblue-Outline" id="btn-others" type="button">Others</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group float100">
+                                            <label for="fname">Category</label>
+                                            <select class="form-control" id="country">
+                                                <option>Select Category</option>
+                                                <option>General</option>
+                                                <option>OBC</option>
+                                                <option>ST/SC</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group float100">
+                                            <label for="fname">Marital Status</label>
+                                            <div class="float100">
+                                                <div class="col-xs-6 p-l-0 p-r-10"><button class="profile-frm-lightblue" id="btn-single" type="button">Single</button></div>
+                                                <div class="col-xs-6 p-l-10 p-r-0"><button class="profile-lightblue-Outline" id="btn-married" type="button">Married</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group float100">
+                                            <label for="fname">Differently Abled</label>
+                                            <div class="float100">
+                                                <div class="col-xs-6 p-l-0 p-r-10"><button class="profile-lightblue-Outline" id="btn-day" type="button">Yes</button></div>
+                                                <div class="col-xs-6 p-l-10 p-r-0"><button class="profile-frm-lightblue" id="btn-dan" type="button">No</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" id="type-col">
+                                        <div class="form-group float100">
+                                            <label for="lname">Type</label>
+                                            <input class="form-control" id="title" type="text" placeholder="Type" />
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="col-sm-12 col-xs-12 m-t-30">
+                                    <button class="btn-back-outline pull-left back">Back</button>
+                                    <button class="btn-red-small pull-right continue">Save & Continue</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="6a">
+                                <a class="edit-profile pull-right" href="#">Edit Profile</a>
+
+                                <form action="" method="POST" enctype="multipart/form-data">
+                                  {% csrf_token %}
+
+                                <section class="candidate-details profileForm">
+                                    <div class="col-sm-12 no-padding">
+                                        <div class="float100 top-section-preview grey-bg-inner-preview">
+                                            <div class="col-sm-6 col-xs-6 no-padding img-col">
+                                                <div class="img-box col-sm-4 col-xs-4 no-padding">
+                                                    <img class="img-circle img-responsive" name='imgPhoto' src="images/profileicon.png" />
+                                                </div>
+                                                <div class="candi-detail col-sm-8 col-xs-8 p-r-0">
+                                                    <span name="canId">1</span>
+                                                    <h4>Mr. <span name="first_name">abc</span> <span name="last_name"> XYZ</span></h4>
+                                                    <span name='headline'>UX Designer <span class="m-l-5 m-r-5 horizontal-bar">|</span> Company Name</span>
+                                                    <div class="candi-personal-detail">
+                                                        <p><i class="fas fa-map-marker-alt"></i> <span name='city'>New Delhi </span>,<span name='country'>India</span></p>
+                                                        <p><i class="ti-briefcase"></i> <span name='experience' >6 Years</span></p>
+                                                        <p><i class="far fa-envelope"></i> <span name='email_id'>xyz@gmail.com</span></p>
+                                                        <p><i class="fas fa-mobile-alt"></i> <span class="font-12" name='mobile'>+91 9876543210</span></p>
+                                                        <p><i class="fas fa-building"></i> <span class="font-12"><span name='industryText'>Telecom </span><span class="p-l-5 p-r-5">|</span> RF Engineer</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6 p-r-0 skill-col">
+                                                <h5 class="skills-h4 m-t-0">Skills <a href="#" class="p-l-10">Edit</a><span class="p-l-5 p-r-5 horizontal-bar">|</span><a href="#">Add</a></h5>
+                                                <div class="skills">
+                                                    <span class="btn btn-border m-r-10 m-t-5" name='skills'>HTML</span><span class="btn btn-border m-r-10 m-t-5" name='one'>CSS</span><span class="btn btn-border m-r-10 m-t-5" name='two'>Photoshop</span>
+                                                    <span class="btn btn-border m-r-10 m-t-5" name='three'>UI / UX</span><span class="btn btn-border m-r-10 m-t-5" name='four'>Dreamweaver</span><span class="btn btn-border m-r-10 m-t-5" name='five'>Illustrator</span>
+                                                </div>
+                                                <h5 class="resume-h4">Update Resume</h5>
+                                                <div class="file-upload candidate-profile">
+                                                    <div class="file-select">
+                                                        <div class="file-select-name" id="noFile"><a href="#" name='resume'>Resume.docx</a></div>
+                                                        <input type="file" name="chooseFile" id="chooseFile">
+                                                        <div class="file-select-button" id="fileName"><img src="images/upload.png" /></div>
+                                                    </div>
+                                                    <div class="extension">
+                                                        <span>.doc, .docx, .pdf &amp; less than 2mb</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="float100 bottom-section">
+                                            <div class="col-sm-12 no-padding summary">
+                                                <h4>Summary <a class="p-l-10" href="#" id="btn-edit-summary">Edit</a></h4>
+                                                <p name="summary">Key understanding of data analytic tools. An appetite for innovation with an eye for learning new process. Constant urge to improve business process.</p>
+                                            </div>
+
+                                            <div class="col-sm-12 no-padding education">
+                                                <h4>Education <a class="p-l-10" href="#" id="btn-add-education">Add</a></h4>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="grey-bg-inner graduation-box">
+                                                        <h5 class="m-t-0">Under Graduate <button class="p-l-10" href="#" id="btn-edit-undergra">Edit</button></h5>
+                                                        <p class="graduation" name='degree'><i class="fa fa-graduation-cap"></i> Bachelor of Technology</p>
+                                                        <p class="university" name='institute'>Poornima University</p>
+                                                        <p name='from_where'><i class="fas fa-map-marker-alt"></i>Jaipur, Rajasthan</p>
+                                                        <p><span class="left-span">Specialization :</span><span class="right-span" name='course'>Computer Science</span></p>
+                                                        <p><span class="left-span">Degree Type :</span><span class="right-span" name='degree_type'>Full Time</span></p>
+                                                        <p><span class="left-span">Time Period :</span><span class="right-span"><span name="ugto"> 2012 </span>to<span name='ugyear'> 2016</span></span></p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="grey-bg-inner school-box">
+                                                        <h5 class="m-t-0">Class XII<sup>th</sup> <button href="#" class="p-l-10" id="btn-edit-school">Edit</button></h5>
+                                                        <p class="graduation" name='twelthschool'><i class="fa fa-graduation-cap"></i> Senior Secondary School</p>
+                                                        <p class="university">St. Paul High School</p>
+                                                        <p name='twelthcity'><i class="fas fa-map-marker-alt"></i>Patna, Bihar</p>
+                                                        <p><span class="left-span">Specialization :</span><span class="right-span" name='twelthspecification'>Science</span></p>
+                                                        <p><span class="left-span">Degree Type :</span><span class="right-span">Full Time</span></p>
+                                                        <p><span class="left-span">Time Period :</span><span class="right-span"><span name='twelthto'>2010</span> to <span name='twelthyear'>2012</span></span></p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 no-padding experience p-t-10">
+                                                <h4>Experience <a class="p-l-10" href="#">Add</a></h4>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="grey-bg-inner expe-box">
+                                                        <h5 class="m-t-0"><span name='organization'>HitechPeopleInc Pvt. Ltd. </span><button class="p-l-10" id="btn-edit-expe">Edit</button></h5>
+                                                        <p><i class="far fa-file-alt"></i><span name='designation'> Web Designer</span></p>
+                                                        <p><i class="fas fa-map-marker-alt"></i><span name='current_city'>Jaipur, Rajasthan</span></p>
+                                                        <span class="left-span">Time Period :</span><span class="right-span"><span name='current_from'>Sep 2014</span> to <span name='present_date'>Nov 2016</span></span>
+                                                        <span class="left-span">Role &amp; Resp :</span><span class="right-span" name='current_description'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-sm-12 no-padding experience p-t-10">
+                                                <h4>Project <a class="p-l-10" href="#">Add</a></h4>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="grey-bg-inner pro-box">
+                                                        <h5 class="m-t-0"><span name='project_title'>External Portal </span><button class="p-l-10" id="btn-edit-pro">Edit</button></h5>
+                                                        <p><span class="left-span">Role :</span><span class="right-span" name='project_role'>Web Designer</span></p>
+                                                        <p><span class="left-span">Time Period :</span><span class="right-span"><span name='project_from'>Sep 2014 </sapn>to <span name='project_to'>Nov 2016</span></span></p>
+                                                        <p><span class="left-span">URL :</span><span class="right-span" name='project_url'>http://www.externalportal.com</span></p>
+                                                        <p><span class="left-span">Description :</span><span class="right-span" name='project_description'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 no-padding other-details p-t-10">
+                                                <h4>Other Details <a href="#" class="p-l-10">Add</a></h4>
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="grey-bg-inner pre-box">
+                                                        <h5 class="m-t-0">Job Preference <button class="p-l-10" id="btn-edit-pre">Edit</button></h5>
+                                                        <p><span class="left-span">Prefered Location :</span><span class="right-span" name='perferLocation'>Delhi/NCR</span></p>
+                                                        <p><span class="left-span">Job Type :</span><span class="right-span" name='job_type'>Permanent</span></p>
+                                                        <p><span class="left-span">Employment Type :</span><span class="right-span" name='job_description'>Full Time</span></p>
+                                                        <p><span class="left-span">Expected Salary :</span><span class="right-span" name='expectedCTC'>Rs. 500000 P.A.</span></p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="grey-bg-inner action-box">
+                                                        <h5 class="m-t-0">Affirmative Action <button class="p-l-10" id="btn-edit-action">Edit</button></h5>
+                                                        <p><span class="left-span">Category :</span><span class="right-span" name='category'>General</span></p>
+                                                        <p><span class="left-span">Differently Abled :</span><span class="right-span" name='differentlyAbled'>No</span></p>
+                                                        <p><span class="left-span">DOB</span><span class="right-span" name='dob'>29-03-1990</span></p>
+                                                        <p><span class="left-span">Gender</span><span class="right-span" name='gender'>Male</span></p>
+                                                        <p><span class="left-span">Marital Status</span><span class="right-span" name='maritalStatus'>Single</span></p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <input type="submit" value="Submit">
+                              </form>
+                            </div>
+                        </div>
+                        <!-- /Bootstrap Tabs -->
+                        <!-- Bootstrap Accordion -->
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"></div>
+                        <!-- /Bootstrap Accordion -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 p-r-0 profileStrn2">
+                        <h4 class="m-t-0">Globalhunt.in provides the job that you would like to  do.</h4>
+
+                        <div class="grey-bg-side">
+                            <h4>Profile Strength</h4>
+                            <div class="progress m-t-10">
+                                <div class="barOverflow">
+                                    <div class="bar"></div>
+                                </div>
+                                <span>27</span>%
+                                <p>
+                                    27% of profile is Completed
+                                </p>
+                            </div>
+                            <div class="profile-strength m-t-20">
+                                <p><img src="{% static 'images/analytics.png'%}"/>The more your strength, the better the oppurtunity.</p>
+                                <p><img src="{% static 'images/briefcase.png'%}"/>1200 Jobs are matching  your profile now.</p>
+                                <p><img src="{% static 'images/Search user.png'%}"/>Search Jobs over 15000 Globalhunts’s trusted companies.</p>
+                                <p><img src="{% static 'images/medal.png'%}"/>12 other skills are matching profile.</p>
+                            </div>
+                        </div>
+                        <div class="strnth-benfts">
+                            <h4>Resume Strength Benifits</h4>
+                            <div class="benifits-para">
+                                <p>
+                                    GlobalHunt.in provides you the job that you would like to do.
+                                    As you start making your resume you will be able to find the
+                                    job that suits your profile.
+                                </p>
+                                <p>
+                                    Your resume will be visible to employers and companies, in
+                                    accordance with our terms. Your phone number and email address
+                                    are only provided to employers you apply or respond to.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grey-bg-side" style="display:none;">
+                            <h4>People also viewed</h4>
+                            <div class="extra-job float100">
+                                <h5>Software Developer</h5>
+                                <div class="col-sm-12 no-padding">
+                                    <span class="left-span"><i class="fas fa-map-marker-alt"></i>New Delhi</span>
+                                    <span class="left-span"><i class="ti-briefcase"></i>6-8 Years</span>
+                                </div>
+                            </div>
+                            <div class="extra-job float100">
+                                <h5>Senior Business Intelligence</h5>
+                                <div class="col-sm-12 no-padding">
+                                    <span class="left-span"><i class="fas fa-map-marker-alt"></i>New Delhi</span>
+                                    <span class="left-span"><i class="ti-briefcase"></i>6-8 Years</span>
+                                </div>
+                            </div>
+                            <div class="extra-job float100">
+                                <h5>Senior Business Intelligence</h5>
+                                <div class="col-sm-12 no-padding">
+                                    <span class="left-span"><i class="fas fa-map-marker-alt"></i>New Delhi</span>
+                                    <span class="left-span"><i class="ti-briefcase"></i>6-8 Years</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section class="customer-logos slider float100 m-t-40">
+                    <div class="slide"><img src="{% static 'images/image1.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image2.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image3.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image4.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image5.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image6.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image7.png' %}"></div>
+                    <div class="slide"><img src="{% static 'images/image8.png' %}"></div>
+                </section>
+            </div>
+        </section>
+
+        <footer class="footer float100">
+            <div class="upper-footer float100">
+                <div class="container">
+                    <div class="col-sm-6">
+                        <h2>Want To Keep Yourself Updated ?</h2>
+                        <p>Lorem ipsum dolor sit amet is simply a dummy text which has no meaning.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>Subscribe</h4>
+                        <div class="footer-email"><input type="text" placeholder="Enter Your Email" /><button class="form_btn btn-joinus">Join Us</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer float100">
+                <div class="container">
+                    <div class="col-sm-3">
+                        <h4>Job Seekers</h4>
+                        <ul>
+                            <li><a href="#">Register Now</a></li>
+                            <li><a href="#">Search Jobs</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Security Advice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Top Categories</h4>
+                        <ul>
+                            <li><a href="#">IT Software Jobs</a></li>
+                            <li><a href="#">BPO Jobs</a></li>
+                            <li><a href="#">Sales Jobs</a></li>
+                            <li><a href="#">Finance Jobs</a></li>
+                            <li><a href="#">Marketing Jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Top Categories</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Industries</a></li>
+                            <li><a href="#">Markets</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="logo-section widget_flickr" >
+                            <h4>Connect with us</h4>
+                            <div class="flickr_widget_wrapper">
+
+                                <div class="flickr_badge_image" id="flickr_badge_image1">
+                                    <a href="https://www.linkedin.com/company/globalhunt" target="_blank">
+                                        <img src=
+										"{% static 'images/footer_linkedin.png' %}" alt="linkedin">
+                                        <div class="flickr_fadder"></div>
+                                    </a>
+                                </div>
+
+                                <div class="flickr_badge_image" id="flickr_badge_image2">
+                                    <a href="https://www.facebook.com/GlobalHuntIndia" target="_blank">
+                                        <img src=
+										"{% static 'images/footer_facebook.png' %}"
+										alt="facebook">
+                                        <div class="flickr_fadder"></div>
+                                    </a>
+                                </div>
+
+                                <div class="flickr_badge_image" id="flickr_badge_image3">
+                                    <a href="https://twitter.com/GlobalHuntIndia" target="_blank">
+                                        <img src=
+										"{% static 'images/footer_twitter.png' %}"
+										alt="twitter">
+                                        <div class="flickr_fadder"></div>
+                                    </a>
+                                </div>
+
+                                <div class="flickr_badge_image" id="flickr_badge_image3">
+                                    <a href="https://www.glassdoor.co.in/Overview/Working-at-GlobalHunt-EI_IE519182.11,21.htm" target="_blank">
+                                        <img src=
+										"{% static 'images/footer_glassdoor.png' %}"
+										alt="glassdoor">
+                                    </a>
+                                </div>
+
+                                <div class="flickr_badge_image" id="flickr_badge_image4">
+                                    <a href="https://plus.google.com/u/0/+globalhunt/posts" target="_blank">
+                                        <img src=
+										"{% static 'images/footer_Googleplus.png' %}"
+										alt="Google+">
+                                        <div class="flickr_fadder"></div>
+                                    </a>
+                                </div>
+                                <div class="flickr_badge_image" id="flickr_badge_image1"></div><div class="flickr_badge_image" id="flickr_badge_image2"></div><div class="flickr_badge_image" id="flickr_badge_image3"></div><div class="flickr_badge_image" id="flickr_badge_image4"></div><div class="flickr_badge_image" id="flickr_badge_image5"></div><div class="flickr_badge_image" id="flickr_badge_image6"></div><div class="flickr_badge_image" id="flickr_badge_image7"></div><div class="flickr_badge_image" id="flickr_badge_image8"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 no-padding">
+                            <a href="#" class="footer-follow-button">Follow @GlobalHuntIndia</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="fbottom">
+                            <div class="row">
+                                <div class="col-sm-9 no-padding">
+                                    <img src="{% static 'images/dnv.png' %}" alt="dnv">
+                                </div>
+                                <div class="col-sm-3 text-right">
+                                    <span>© 2016 GlobalHunt India Pvt. Ltd.</span>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbox-btn text-center">
+                <button href="#" id="popup-addClass"><i class="fa fa-comment-alt"></i></button>
+                <button href="#" id="popup-removeClass" style="display:none;"><i class="fa fa-times"></i></button>
+            </div>
+
+            <div class="popup-box chat-popup" id="qnimate">
+                <div class="popup-head">
+                    <div class="popup-head-left pull-left">
+                        <div class="btn-group">
+                            <button class="chat-header-button" data-toggle="dropdown" type="button" aria-expanded="false">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
+                            <ul role="menu" class="dropdown-menu pull-left">
+                                <li><a href="#">drop 1</a></li>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 3</a></li>
+                                <li><a href="#">drop 4</a></li>
+                            </ul>
+                        </div>
+                        Head Business Intelligence
+                    </div>
+                    <div class="popup-head-right">
+                        <button class="chat-header-button" type="button"><i class="fab fa-skype"></i></button>
+                    </div>
+                </div>
+                <div class="popup-messages">
+
+                    <div class="direct-chat-messages">
+                        <div class="chat-box-single-line">
+                            <abbr class="timestamp">October 8th, 2015</abbr>
+                        </div>
+
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg-left doted-border">
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-name pull-left">Recruiter</span>
+                            </div>
+                            <img src="#"  class="direct-chat-img" />
+                            <div class="direct-chat-text">
+                                congratulations! you're selected for the second round,
+                                please find the following link for screening form
+                            </div>
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+                            </div>
+                        </div>
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg-right doted-border">
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-name pull-right">Candidate</span>
+                            </div>
+                            <img src="#" class="direct-chat-img" />
+                            <div class="direct-chat-text">
+                                Ok Thank you
+                            </div>
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-timestamp pull-left">4.00 PM</span>
+                            </div>
+                        </div>
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg-left doted-border">
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-name pull-left">Recruiter</span>
+                            </div>
+                            <img src="#" class="direct-chat-img" />
+                            <div class="direct-chat-text">
+                                congratulations! you're selected for the second round,
+                                please find the following link for screening form
+                            </div>
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+                            </div>
+                        </div>
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg-right doted-border">
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-name pull-right">Candidate</span>
+                            </div>
+                            <img src="#" class="direct-chat-img" />
+                            <div class="direct-chat-text">
+                                Ok Thank you
+                            </div>
+                            <div class="direct-chat-info clearfix">
+                                <span class="direct-chat-timestamp pull-left">4.00 PM</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popup-messages-footer">
+                    <textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message"></textarea>
+                    <div class="btn-footer pull-right">
+
+                        <button class="bg_none">Send</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- jp popular Categories Wrapper End -->
+    <!--main js file start-->
+    <script src="{% static 'js/jquery_min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/calendar.js' %}"></script>
+    <script src="{%static ' js/dateCalendar.js' %}"></script>
+    <script src="{% static 'js/accordion.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/slick.js' %}" type="text/javascript"></script>
+    <!--main js file end-->
+
+    <script type="text/javascript">
+        function nextSection(nextId, currId) {
+            document.getElementById(nextId).style.display = 'block';
+            document.getElementById(currId).style.display = 'none';
+        }
+
+        function previousSection(previousId, currId) {
+            document.getElementById(previousId).style.display = 'block';
+            document.getElementById(currId).style.display = 'none';
+        }
+        function previousSection(previousId, currId) {
+            document.getElementById(previousId).style.display = 'block';
+            document.getElementById(currId).style.display = 'none';
+        }
+
+        $(function () {
+            $("#checkboxPermanent").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#permanent").hide();
+                    $("#current").show();
+                } else {
+                    $("#permanent").show();
+                    $("#current").hide();
+                    $(".current-address-box").show();
+                }
+            });
+        });
+
+        $("#btn-cancel-perma").click(function () {
+            $("#permanent").hide();
+            $("#current").show();
+            $(".current-address-box").hide();
+            $("#checkboxPermanent").prop('checked', true);
+        });
+
+        $(".profSave1").click(function () {
+            $(".profEdit1").hide();
+            $(".prof2Btn").hide();
+            $(".profView1").show();
+        });
+        $("#addpostGbtn").click(function () {
+            $("#postGSec").show();
+            $(".postGhead").show();
+            $(".addpostGbtnDiv").hide();
+        });
+        $("#canpostGbtn").click(function () {
+            $("#postGSec").hide();
+            $(".postGhead").hide();
+            $(".addpostGbtnDiv").show();
+        });
+
+        $("#addclassXbtn").click(function () {
+            $("#classXSec").show();
+            $(".classXhead").show();
+            $(".addclassXbtnDiv").hide();
+        });
+
+        $("#canclassXbtn").click(function () {
+            $("#classXSec").hide();
+            $(".classXhead").hide();
+            $(".addclassXbtnDiv").show();
+        });
+
+        $("#addmoreCerbtn").click(function () {
+            $("#certiView").show();
+        });
+        $("#addmoreExpbtn").click(function () {
+            $("#ExpeView").show();
+        });
+        $("#addmoreAchibtn").click(function () {
+            $("#AchiView").show();
+        });
+        $("#addmoreProjbtn").click(function () {
+            $("#ProjView").show();
+        });
+        $("#contryChnge").click(function () {
+            $(".hiddnCntry").show();
+        });
+        $("#contryChnge2").click(function () {
+            $(".hiddnCntry2").show();
+        });
+
+        $('.continue').click(function () {
+            $('.customNav1 > .active').next('li').find('a').trigger('click');
+        });
+        $('.back').click(function () {
+            $('.customNav1 > .active').prev('li').find('a').trigger('click');
+        });
+        /*========tab to accordian======*/
+
+        getAccordion("#tabs", 768);
+
+        /*========tab to accordian end======*/
+
+
+    </script>
+</body>
+</html>
