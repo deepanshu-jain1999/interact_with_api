@@ -14,7 +14,7 @@ class FormHandler(ListView):
         return render(request, self.template_name)
 
     def post(self, request):
-        r = urllib.request.urlopen('http://127.0.0.1:5000/').read()
+        r = urllib.request.urlopen('http://awsdev.globalhuntindia.com/Candi/').read()
         soup = BeautifulSoup(r, 'html.parser')
 
         # profile
@@ -147,7 +147,7 @@ class FormHandler(ListView):
                 'experience': {'months': '', 'TotalExp': experience.text, 'years': experience.text}}
 
         r = requests.post(auth_url, headers=headers, data=dumps(payload))
-        return HttpResponseRedirect('http://127.0.0.1:8000/')
+        return HttpResponseRedirect('http://127.0.0.1:8000/Candi/')
 
 
 
