@@ -2,7 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62fbbe13-6a6f-44c2-8a35-bf30bdd70123" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/Flaticond41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fontawesome-webfont3e6e.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fontawesome-webfont3e6e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fontawesome-webfont3e6e.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fontawesome-webfont3e6e.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fontawesome-webfont3e6e.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Employers-Blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Employers-Bluetick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Employers-Grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/JobSeekers-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/JobSeekers-bluetick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/JobSeekers-grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Recruiters-Blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Recruiters-Bluetick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Recruiters-Grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Search user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/Searchuser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/ShortlistedBanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/ShortlistedBanner1415.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/ShortlistedBanner1912.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/analytics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/briefcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/checkcircle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/companyIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/dnv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/facebook_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/footer_Googleplus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/footer_facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/footer_glassdoor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/footer_linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/footer_twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/general-job-details-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/google_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/image8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/job-details-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/jobSearchBanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/linkedin_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/list-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/medal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/profileicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/recommended-job-details-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/search_lence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/twitter_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/user icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/usericon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/images/youtube_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/dateCalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/jquery_min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/static/apps/js/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/apps/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apps/form.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,65 +107,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trial/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trial/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#639#680#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="149" column="67" lean-forward="true" selection-start-line="149" selection-start-column="67" selection-end-line="149" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/apps/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5202">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-494">
+              <caret line="1878" column="33" selection-start-line="1878" selection-start-column="33" selection-end-line="1878" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -116,9 +152,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="711" />
-    <option name="y" value="17" />
-    <option name="width" value="657" />
-    <option name="height" value="715" />
+    <option name="y" value="24" />
+    <option name="width" value="647" />
+    <option name="height" value="685" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -134,6 +170,28 @@
               <item name="trial" type="b2602c69:ProjectViewProjectNode" />
               <item name="trial" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="trial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trial" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trial" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -147,6 +205,14 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/static/apps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/static/apps" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -206,8 +272,8 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33020344" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24940239" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3286385" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14501992" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
@@ -281,10 +347,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/calendar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/carousel.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/fontawesome-all.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/owl.carousel.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/Responsive.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/css/themify-icons.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/static/apps/js/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/apps/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5202">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="-494">
+          <caret line="1878" column="33" selection-start-line="1878" selection-start-column="33" selection-end-line="1878" selection-end-column="33" />
         </state>
       </provider>
     </entry>
